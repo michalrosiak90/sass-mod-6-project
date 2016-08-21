@@ -1,0 +1,982 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700)
+
+$fonts: "PT Sans", sans-serif
+$project-blue: #00c7e8
+$project-dark: #313234
+$project-highlight: #4a4c4b
+
+* 
+	font-family: $fonts
+
+body 
+	box-sizing: border-box
+	margin: 0
+	
+.container 
+	max-width: 1200px
+	margin: 0 auto
+	
+nav
+	&:before
+		content: " "
+		display: table
+		clear: both
+		
+	&:after 
+		content: " "
+		display: table
+		clear: both
+
+header
+	height: 50px
+	background-color: $project-dark
+	
+	nav
+		ul 
+			float: right
+			margin: 0
+			padding: 0
+			list-style-type: none
+			
+			li
+				display: inline-block
+				
+				a
+					line-height: 50px
+					display: block
+					color: #fff
+					padding: 0 20px
+					text-decoration: none
+					text-transform: uppercase
+					font-weight: 700
+					&:hover
+						background-color: $project-highlight
+						color: $project-blue
+		img
+			cursor: pointer
+			width: 150px
+			padding: 9px 0
+
+.hero 
+	height: 600px
+	background-image: url("https://static.pexels.com/photos/170/apple-laptop-notebook-notes.jpg")
+	background-size: cover
+	background-position: center
+	position: relative
+
+	.slogan 
+		background-color: rgba(0, 0, 0, 0.5)
+		width: 750px
+		height: 250px
+		font-size: 45px
+		text-transform: uppercase
+		color: #fff
+		margin: 0 auto
+		float: right
+		margin-top: 175px
+	
+		p
+			margin: 65px 100px 0 65px
+		
+			span
+				font-weight: 700
+
+	.circle-pointer 
+		position: absolute
+		bottom: 0
+		left: 45.7%
+		margin: 0 auto
+
+		.circle 
+			width: 20px
+			height: 20px
+			background-color: $project-dark
+			border-radius: 50%
+			display: inline-block
+			margin: 15px
+			&:hover
+				background-color: #fff
+				cursor: pointer
+
+.row
+
+	&:before
+		content: " "
+		display: table
+		clear: both
+		
+	&:after 
+		content: " "
+		display: table
+		clear: both
+
+[class*="col-"] 
+	float: left
+
+.col-f1
+	width: 11.11%
+
+.col-f2
+	width: 22.22%
+
+.col-1a
+	width: 20%
+
+.col-2a
+	width: 40%
+
+.col-1
+	width: 8.33%
+
+.col-2
+	width: 16.66%
+
+.col-3
+	width: 25%
+
+.col-4
+	width: 33.33%
+
+.col-5
+	width: 41.66%
+
+.col-6
+	width: 50%
+
+.col-7
+	width: 58.33%
+
+.col-8
+	width: 66.66%
+
+.col-9
+	width: 75%
+
+.col-10
+	width: 83.33%
+
+.col-11
+	width: 91.66%
+
+.col-12
+	width: 100%
+
+.col-offset-f1
+	margin-left: 11.11%
+
+.col-offset-f2
+	margin-left: 22.22%
+
+.col-offset-1a
+	margin-left: 20%
+
+.col-offset-2a
+	margin-left: 40%
+
+.col-offset-1a
+	margin-left: 20%
+
+.col-offset-2a
+	margin-left: 40%
+
+.col-offset-1
+	margin-left: 8.33%
+
+.col-offset-2
+	margin-left: 16.66%
+
+.col-offset-3
+	margin-left: 25%
+
+.col-offset-4
+	margin-left: 33.33%
+
+.col-offset-5
+	margin-left: 41.66%
+
+.col-offset-6
+	margin-left: 50%
+
+.col-offset-7
+	margin-left: 58.33%
+
+.col-offset-8
+	margin-left: 66.66%
+
+.col-offset-9
+	margin-left: 75%
+
+.col-offset-10
+	margin-left: 83.33%
+
+.col-offset-11
+	margin-left: 91.66%
+
+.container
+	.services 
+		text-align: center
+		margin: 105px 60px 0 60px
+
+		p 
+			color: #9d9d9d
+			margin-top: 0
+			margin: 0 30px 0
+
+		h2 
+			font-size: 30px
+			font-weight: 600
+			color: #313332
+			margin-bottom: 10px
+			margin-top: 30px
+			text-transform: uppercase
+			font-weight: 700
+
+		.col-4
+			.fa 
+				font-size: 70px
+				width: 120px
+				height: 120px
+				line-height: 120px
+				border-radius: 15px
+				color: #fff
+				background-color: $project-dark
+				&:hover
+					background-color: $project-blue
+					
+				&:hover + h2
+					color: $project-blue
+
+	.featured-works 
+		text-align: center
+		margin: 0 auto
+		
+		h2
+			font-size: 65px
+			text-transform: uppercase
+			margin: 100px 0 -15px
+			color: $project-dark
+
+		p 
+			width: 75%
+			margin: 20px auto 15px
+			color: #B3B3B3
+
+.gallery [class*="col-"] 
+	margin: 0
+	padding: 0
+
+.gallery
+	.stock 
+		height: 300px
+		overflow: hidden
+		position: relative
+
+		img 
+			width: 100%
+			height: 100%
+			object-fit: cover
+
+		.layer 
+			position: absolute
+			width: 100%
+			height: 100%
+			background: transparent
+			overflow: hidden
+			transition: 0.5s
+			&:hover
+				background: rgba(0, 0, 0, 0.6)
+			&:hover .fa-search
+				opacity: 0.9
+				left: 30%
+			&:hover .fa-link
+				opacity: 0.9
+				right: 30%
+
+			i
+				position: absolute
+				top: 0
+				bottom: 0
+				margin: auto
+				width: 54px
+				height: 54px
+				line-height: 54px
+				text-align: center
+				font-size: 34px
+				color: #fdfdfd
+				background: transparent
+				border: 2px solid #fdfdfd
+				border-radius: 5px
+				opacity: 0
+				transition: 0.5s
+				&:hover
+					color: $project-dark
+					background: #fdfdfd
+
+			.fa-search 
+				left: 0
+				
+			.fa-link
+				right: 0
+
+.crew
+	.row
+		.col-3 
+			margin: 70px auto 90px
+			text-align: center
+			position: relative
+			
+			h2 
+				position: relative
+				color: $project-dark
+				margin: 0
+				top: 20px
+				
+			.workers 
+				border-radius: 50%
+				width: 250px
+				height: 250px
+				position: absolute
+				float: left
+				text-align: center
+				left: 0
+				right: 0
+				margin: auto
+				top: 0
+
+			.manager 
+				background: url("https://static.pexels.com/photos/7051/fashion-woman-girl-forest-large.jpg")
+				background-position: 50% 50%
+				background-size: 200%
+
+			.secretary 
+				background: url("https://static.pexels.com/photos/26180/pexels-photo-26180-large.jpg")
+				background-position: 50% 50%
+				background-size: 200%
+
+			.designer 
+				background: url("https://static.pexels.com/photos/91227/pexels-photo-91227-large.jpeg")
+				background-position: 50% 50%
+				background-size: 200%
+
+			.pr 
+				background: url("https://static.pexels.com/photos/65121/pexels-photo-65121-large.jpeg")
+				background-position: 50% 50%
+				background-size: 200%
+
+			.job 
+				color: white
+				line-height: 250px
+				background-color: rgba(0, 0, 0, 0.4)
+				border-radius: 50%
+				width: 250px
+				height: 250px
+				font-size: 25px
+				font-weight: 700
+				left: 0
+				right: 0
+				margin-left: auto
+				margin-right: auto
+				opacity: 0
+				&:hover
+					opacity: 1
+					transition: opacity .25s ease-in-out .1s
+					-webkit-transition: 1s
+					transition: 1s
+
+.tablet-article 
+	position: relative
+	overflow: hidden
+	background-color: $project-dark
+	background-size: cover
+	height: 450px
+	width: 100%
+	
+	.container
+		.row
+			.col-4
+				img 
+					height: 420px
+					position: relative
+					top: 50px
+
+			.col-8
+				margin: 0 -60px 0 10px
+			
+				.ipad-text
+					h2 
+						text-transform: uppercase
+						color: white
+						font-size: 60px
+						margin: 100px 0 0 0
+					
+					.row
+						.col-8
+							p 
+								font-size: 19px
+								color: white
+								margin-right: 60px
+
+						.col-4
+							p
+								font-size: 19px
+								color: white
+								
+								span 
+									font-style: italic
+
+.numbers
+	.row 
+		padding: 20px 0 20px
+	
+		.col-3
+			h2
+				color: $project-dark
+				font-size: 90px
+				font-weight: 700
+				margin: 60px 0 0
+				text-align: center
+				
+			h3
+				text-transform: uppercase
+				margin: -10px 0 70px
+				color: $project-blue
+				font-size: 25px
+				text-align: center
+
+.footer 
+	background-color: $project-dark
+	position: relative
+	
+	.container
+		.row
+			.footer-elements
+				position: relative
+				
+				h2
+					text-transform: uppercase
+					margin: 35px 25px
+					color: white
+					&:after
+						content: " "
+						position: absolute
+						width: 110px
+						height: 3px
+						background: white
+						top: 50px
+						margin-left: 15px
+						
+				p
+					margin: 35px 25px
+					color: white	
+
+			.middle-column
+				.row
+					.col-3
+						p 
+							margin: 0 0px 30px 25px
+							font-weight: 700
+
+					.col-9
+						p
+							margin: 0 25px 11px 30px
+
+			.right-column
+				.buttons
+					margin: -15px 0 0 25px
+
+					.fa
+						color: #fff
+						background-color: $project-blue
+						width: 40px
+						height: 40px
+						font-size: 20px
+						line-height: 40px
+						text-align: center
+						cursor: pointer
+						margin: 0 10px 0 0
+
+.copyright 
+	background-color: #202021
+	border-top: 1px solid #454545
+
+	p 
+		color: #fff
+		line-height: 80px
+		margin: 0 auto
+		text-align: center
+		font-size: 20px
+		font-weight: 700
+
+@media (min-width: 768px) and (max-width: 1199px)
+
+	* 
+		box-sizing: border-box
+	
+	[class*="col-"] 
+		width: 100%
+		padding: 12px
+		float: left
+	
+	.col-m-1
+		width: 8.33%
+
+	.col-m-2
+		width: 16.66%
+
+	.col-m-3
+		width: 25%
+
+	.col-m-4
+		width: 33.33%
+
+	.col-m-5
+		width: 41.66%
+
+	.col-m-6
+		width: 50%
+
+	.col-m-7
+		width: 58.33%
+
+	.col-m-8
+		width: 66.66%
+
+	.col-m-9
+		width: 75%
+
+	.col-m-10
+		width: 83.33%
+
+	.col-m-11
+		width: 91.66%
+
+	.col-m-12
+		width: 100%
+
+	header 
+		height: 70px
+		
+		.container
+			img
+				width: 165px
+				margin: 10px 10px 10px 20px
+
+		nav
+			ul
+				li
+					a
+						line-height: 70px
+						padding: 0 12px
+						font-size: 17px
+						&:hover
+							background-color: $project-dark
+							color: #fff
+						&:active
+							background-color: $project-highlight
+							color: $project-blue	
+	
+	.hero
+		.slogan
+			background-color: rgba(0, 0, 0, 0.5)
+			width: 600px
+			height: 200px
+			font-size: 35px
+			text-transform: uppercase
+			color: #fff
+			float: right
+			margin-top: 175px
+
+			p
+				margin: 55px 0 0 65px
+	
+		.circle-pointer
+			left: 40%
+	
+			.circle
+				width: 35px
+				height: 35px
+				background-color: $project-dark
+				margin: 18px
+				&:hover
+					background-color: $project-dark
+					cursor: pointer
+				&:active
+					background-color: #fff
+
+	.container
+		.services
+			margin: 105px 110px 0 110px
+	
+			.col-4
+				.fa
+					&:hover
+						background-color: $project-dark
+					&:hover + h2
+						color: $project-dark
+					&:active
+						background-color: $project-blue
+					&:active + h2
+						color: $project-blue
+	
+	.gallery
+		.col-m-6
+			.layer
+				background-color: rgba(0, 0, 0, 0.3)
+				&:hover
+					background: rgba(0, 0, 0, 0.3)
+				&:hover .fa-search
+					opacity: 0.9
+					left: 30%
+				&:hover .fa-link
+					opacity: 0.9
+					right: 30%
+					
+				i
+					width: 70px
+					height: 70px
+					line-height: 70px
+					font-size: 45px
+					color: #fdfdfd
+					background: transparent
+					border: 2px solid #fdfdfd
+					opacity: 1
+					transition: 0.3s
+					&:hover
+						color: #fdfdfd
+						background: transparent
+						border: 2px solid #fdfdfd
+					&:active
+						color: $project-dark
+						background: #fdfdfd
+						
+				.fa-search
+					left: 30%
+				.fa-link
+					right: 30%
+	
+	.crew
+		.row
+			.col-m-6
+				.workers
+					top: 12px
+	
+	.tablet-article
+		.container
+			.row
+				.col-m-4
+					img
+						height: 375px
+						position: absolute
+						top: 80px
+				.col-m-8
+					.ipad-text
+						h2
+							margin: 95px 0 0 10px
+							font-size: 50px
+							margin-left: 25px
+						p
+							font-size: 17px
+							margin-left: 10px
+							margin-right: 5
+							text-align: justify	
+
+	.numbers 
+		padding: 0 75px
+
+		.row
+			.col-m-6
+				h2
+					margin: 30px 0 0
+					font-size: 110px
+				h3
+					margin: -10px 0 50px
+					font-size: 40px
+	
+	.footer
+		.container
+			.row
+				.footer-elements
+					p
+						font-size: 15px
+						margin: 10px 30px 10px 0
+					h2
+						margin: 10px 0
+						&:after
+							top: 35px
+							width: 85px
+				.middle-column
+					.row
+						.col-m-3
+							p
+								margin: 0 40px 30px -10px
+
+						.col-m-9
+							p
+								margin: 0 -20px 8px 35px
+	
+				.right-column
+					.buttons
+						margin-left: 0
+						margin-top: 20px
+						.fa
+							width: 50px
+							height: 50px
+							font-size: 25px
+							line-height: 50px
+							margin: 0 7px 11px 0
+
+@media screen and (max-width: 767px)
+
+	*
+		box-sizing: border-box
+
+	[class*="col-"]
+		width: 100%
+		padding: 12px
+		float: left
+
+	.col-s-1
+		width: 8.33%
+
+	.col-s-2
+		width: 16.66%
+
+	.col-s-3
+		width: 25%
+
+	.col-s-4
+		width: 33.33%
+
+	.col-s-5
+		width: 41.66%
+
+	.col-s-6
+		width: 50%
+
+	.col-s-7
+		width: 58.33%
+
+	.col-s-8
+		width: 66.66%
+
+	.col-s-9
+		width: 75%
+
+	.col-s-10
+		width: 83.33%
+
+	.col-s-11
+		width: 91.66%
+
+	.col-s-12
+		width: 100%
+	
+	header
+		height: 488px
+		text-align: center
+
+		.container
+			img
+				width: 360px
+				padding-top: 25px
+				padding-bottom: 0
+				margin: 10px auto
+
+		nav
+			ul
+				float: none
+				margin-top: 0
+
+				li
+					display: block
+
+					a
+						text-align: center
+						margin: 0 auto
+						font-size: 25px
+						line-height: 58px
+						&:hover
+							background-color: $project-dark
+							color: #fff
+						&:active
+							background-color: $project-highlight
+							color: $project-blue
+
+	.hero
+		.slogan
+			background-color: rgba(0, 0, 0, 0.5)
+			width: 100%
+			height: 200px
+			font-size: 35px
+			text-transform: uppercase
+			color: #fff
+			float: right
+			margin-top: 200px
+
+			p
+				margin: 50px auto
+				text-align: center
+
+		.circle-pointer 
+			left: 35%
+	
+			.circle
+				width: 35px
+				height: 35px
+				background-color: $project-dark
+				margin: 18px
+				&:hover
+					background-color: $project-dark
+					cursor: pointer
+				&:active
+					background-color: #fff
+	
+	.container
+		.services
+			margin: 105px 110px 0 110px
+			
+			.col-s-12
+				.fa
+					&:hover
+						background-color: $project-dark
+					&:hover + h2
+						color: $project-dark
+					&:active
+						background-color: $project-blue
+					&:active + h2
+						color: $project-blue
+	
+	.gallery
+		.col-s-12
+			.layer
+				background-color: rgba(0, 0, 0, 0.3)
+				&:hover
+					background-color: rgba(0, 0, 0, 0.3)
+				&:hover .fa-search
+					opacity: 0.9
+					left: 33%
+				&:hover .fa-link
+					opacity: 0.9
+					right: 33%
+					
+				i
+					width: 70px
+					height: 70px
+					line-height: 70px
+					font-size: 45px
+					color: #fdfdfd
+					background: transparent
+					border: 2px solid #fdfdfd
+					opacity: 1
+					transition: 0.3s
+					&:hover
+						color: #fdfdfd
+						background: transparent
+						border: 2px solid #fdfdfd
+					&:active
+						color: $project-dark
+						background: #fdfdfd
+						
+				.fa-search
+					left: 33%
+				
+				.fa-link
+					right: 33%
+	
+	.crew
+		.row
+			.col-s-12
+				.workers
+					top: 12px
+	
+	.tablet-article
+		height: 700px
+		
+		.container
+			.row
+				.col-s-12
+					img
+						height: 375px
+						position: absolute
+		
+		.container
+			.row
+				.col-s-12
+					margin: 0 auto
+					text-align: center
+		
+					img
+						height: 375px
+						margin: 0 auto
+						top: 340px
+						left: 165px
+	
+					.ipad-text
+						h2
+							font-size: 50px
+							margin: 0 auto
+							margin-top: 20px
+							margin-bottom: 10px
+						.row
+							.col-s-12
+								p
+									font-size: 17px
+									margin: 0 55px
+									text-align: center
+
+	.numbers
+		padding: 0
+
+		.row
+			.col-s-12
+				h2
+					margin: 20px 0 0
+					font-size: 95px
+
+				h3
+					margin: -10px 0 50px
+					font-size: 30px
+
+	.footer
+		.container
+			.row
+				.footer-elements
+					margin: 0 auto
+					text-align: center
+	
+					p
+						font-size: 15px
+	
+					h2
+						font-size: 40px
+						&:after
+							width: 110px
+							height: 3px
+							background: #fff
+							top: 112px
+							text-align: center
+							right: 300px
+
+
+				.middle-column
+					.col-s-4
+						p
+							margin: 0 30px 30px 0px
+							text-align: right
+							left: 100px
+
+					.col-s-8
+						p
+							margin: 0 -20px 8px 0px
+							text-align: center
+	
+				.right-column
+					.buttons
+						margin: 0 auto
+	
+						.fa
+							width: 65px
+							height: 65px
+							font-size: 35px
+							line-height: 65px
+							margin: 0 13px 0 0
